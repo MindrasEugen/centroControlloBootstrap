@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prpove Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-icons@1.13.14/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-color-2 txt-color-2">
+    <header>
+        <nav class="navbar navbar-expand-lg mb-3 bg-danger ">
+            <div class="container-fluid">
+                <a class="fs-3 fw-bolder ms-5 txt-color-2 text-decoration-none" href="#">Centro di Controllo-Studio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end gap-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-5 ">
+                        <li class="nav-item">
+                            <a class="nav-link txt-color-13 hover-color-2-underline " href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-color-13 hover-color-2-underline" href="#">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-color-13 hover-color-2-underline" href="#">Risorse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-color-13 hover-color-2-underline" href="#">Archivio</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-color-3 txt-color-9" type="search"
+                            placeholder="Cerca risorse..." aria-label="Search" />
+                        <button
+                            class="btn bg-color-8 hover-color-4-10 border-1 border-dark txt-color-2 w-100 fw-bolder "
+                            type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row gap-4 d-flex justify-content-center">
+                <div
+                    class="col-2 text-center vh-100 d-none d-sm-none d-md-flex d-flex flex-column justify-content-around">
+                    <header>
+                        <h3 class="txt-color-11"><span class="material-icons">account_circle</span>Studente</h3>
+                        <p class="txt-color-11 fs-10 fw-bold ">Sessione attiva</p>
+                    </header>
+                    <main>
+                        <button
+                            class="btn bg-color-1 hover-color-7-3 txt-color-9 w-100 mt-2 fw-semibold d-flex justify-content-center"><span
+                                class="material-icons">dashboard_outlined</span>Home</button>
+                        <button
+                            class="btn bg-color-1 hover-color-7-3 txt-color-9 w-100 mt-2 fw-semibold d-flex justify-content-center"><span
+                                class="material-icons">auto_stories_outlined</span>Lezioni</button>
+                        <button
+                            class="btn bg-color-1 hover-color-7-3 txt-color-9 w-100 mt-2 fw-semibold d-flex justify-content-center"><span
+                                class="material-icons">open_in_full</span>Esercizi</button>
+                        <button
+                            class="btn bg-color-1 hover-color-7-3 txt-color-9 w-100 mt-2 fw-semibold d-flex justify-content-center"><span
+                                class="material-icons">folder_open</span>Materiali</button>
+                        <button
+                            class="btn bg-color-1 hover-color-7-3 txt-color-9 w-100 mt-2 fw-semibold d-flex justify-content-center"><span
+                                class="material-icons">settings_outlined</span>Impostazioni</button>
+                    </main>
+                    <footer>
+                        <button class="btn bg-color-8 hover-color-4-10 txt-color-2 w-100 mt-2 fw-bolder">Aggiungi
+                            Lezione</button>
+                    </footer>
+                </div>
+                <div class="col-9">
+                    <div class="row row-cols-2 bg-color-2 gap-4">
+                        <div class="col-12 col-sm-12 col-md-8 p-3">
+                            <h1 class="txt-color-11 fw-semibold">Risorse di Studio</h1>
+                            <p>Gestisci i tuoi documenti, modeli e guide accademiche.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 p-3">
+                            <button
+                                class="btn bg-color-3 hover-color-7-3 txt-color-9 border-1 border-dark w-100 mt-2 fw-bolder d-flex justify-content-center"><span
+                                    class="material-icons">filter_list_outlined</span>Filtra</button>
+                            <button
+                                class="btn bg-color-8 hover-color-4-10 txt-color-2 border-1 border-dark w-100 mt-2 fw-bolder d-flex justify-content-center"><span
+                                    class="material-icons">file_upload_outlined</span>Carica File</button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 bg-color-1 rounded-3 p-3">
+                            <img class="p-3 rounded-4 bg-color-3 float-start me-2" src="./assets/icons8-folder-36.png"
+                                alt="immagine folder">
+                            <h3 class="txt-color-11 p-3">Cartelle Generali</h3>
+                            <div class="row row-cols-4">
+                                <div class="col-3 ">
+                                    <figure class="bg-color-2 p-2 rounded-3 hover-color-2-7 mt-3">
+                                        <img src="./assets/icons8-folder-60.png" alt="imagine folder" class="w-75">
+                                        <figcaption class="fs-10 txt-color-9 fw-bold">Matematica</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-3 ">
+                                    <figure class="bg-color-2 p-2 rounded-3 hover-color-2-7 mt-3">
+                                        <img src="./assets/icons8-folder-60.png" alt="imagine folder" class="w-75">
+                                        <figcaption class="fs-10 txt-color-9 fw-bold">Storia</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-3 ">
+                                    <figure class="bg-color-2 p-2 rounded-3 hover-color-2-7 mt-3">
+                                        <img src="./assets/icons8-folder-60.png" alt="imagine folder" class="w-75">
+                                        <figcaption class="fs-10 txt-color-9 fw-bold">Economia</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-3 ">
+                                    <figure class="bg-color-2 p-2 rounded-3 hover-color-2-7 mt-3">
+                                        <img src="./assets/icons8-folder-60.png" alt="imagine folder" class="w-75">
+                                        <figcaption class="fs-10 txt-color-9 fw-bold">Progetti</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 bg-color-1 rounded-3 p-3">
+                            <img class="p-3 bg-color-3 rounded-4 float-start m-2" src="./assets/icons8-document-36.png"
+                                alt="immagine folder">
+                            <h3 class="txt-color-11 py-4">Ricorrent</h3>
+                            <button
+                                class="btn bg-color-2 txt-color-9 hover-color-2-7 w-100 mt-2 fw-bolder d-flex justify-content-center"><span
+                                    class="material-icons">view_list_outlined</span>Piano
+                                di
+                                studio</button>
+                            <button
+                                class="btn bg-color-2 txt-color-9 hover-color-2-7 w-100 mt-2 fw-bolder d-flex justify-content-center"><span
+                                    class="material-icons">history_edu_outlined</span>Orario
+                                Lezioni</button>
+                            <button
+                                class="btn bg-color-2 txt-color-9 hover-color-2-7 w-100 mt-2 fw-bolder d-flex justify-content-center"><span
+                                    class="material-icons">feed_outlined</span>Regolamento</button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 bg-color-1 rounded-3 p-3">
+                            <img class="p-3 bg-color-9 rounded-4 float-start m-2"
+                                src="./assets/icons8-product-documents-36.png" alt="immagine folder">
+                            <h3 class="txt-color-11 py-4">Templates</h3>
+                            <button
+                                class="btn bg-color-3 hover-color-7-3 txt-color-9 w-100 mt-2 fw-semibold d-flex justify-content-center"><span
+                                    class="material-icons">receipt_long_outlined</span>Relazione
+                                Accademica</button>
+                            <button
+                                class="btn bg-color-3 hover-color-7-3 txt-color-9 w-100 mt-2 fw-semibold d-flex justify-content-center"><span
+                                    class="material-icons">slideshow-outlined</span>Presentazione
+                                Finale</button>
+                        </div>
+                        <div
+                            class="col-12 col-sm-12 col-md-8 bg-color-12 img-container rounded-3 d-flex flex-column justify-content-end p-0">
+                            <div class="bg-color-12 w-100 h-100 rounded-3 p-3">
+                                <h2 class="px-3 mt-5 txt-color-2">
+                                    Guide di Studio
+                                </h2>
+                                <p class="px-3 w-75 txt-color-2">Approfondimenti metodologici e tecniche di
+                                    apprendimento avanzate
+                                    curate
+                                    dal
+                                    dipartimento
+                                </p>
+                                <button
+                                    class="btn bg-color-1 hover-color-7-3 txt-color-9 m-3 mt-0 fw-semibold d-flex justify-content-center w-50">Sfoglia
+                                    Guide</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
